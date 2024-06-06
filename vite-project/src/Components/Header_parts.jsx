@@ -1,0 +1,43 @@
+import React from 'react'
+import Container from 'react-bootstrap/esm/Container'
+import {Link } from 'react-router-dom'
+
+const Header_parts = () => { 
+
+  return (
+    <div>
+      <Container className='mb-10 mt-5 max-xl:mb-4'>
+        <section className='flex row justify-between m-auto max-md:block'>
+             <div className='w-[36%] flex justify-center items-center max-md:w-[100%]'>
+              <div className=' text-center max-md:text-start'>
+                <div>
+                  <h1 className='text-[67px] mb-3 max-lg:text-[60px] max-md:text-[43px]'>Plant a tree for better world</h1>
+                  <p className='mb-5 px-3 text-muted'>Rectangle follower distribute device layer. Library hand ellipse device strikethrough.</p>
+                  <a href=''>
+                      <Link to='/ShopNow'>
+                    <button className='py-[12px] px-[40px] border-1 border-black font-semibold hover:bg-black hover:text-white hover:-translate-y-[20px] duration-300 easy-in-out'>
+                      Shop Now
+                      </button>
+                      </Link>
+                  </a>
+                </div>
+              </div>
+             </div>
+             <div  className='w-[60%] flex justify-between max-md:w-[100%] max-md:mt-6'>
+              <div className='pt-[70px] w-[48%] max-md:hidden hover-img'>
+              <img decoding="async" src="https://emart.wpthemedemos.com/plant-garden/wp-content/uploads/sites/10/2022/12/plants-banner-first.webp" className="hover:-ms-[15px] duration-300 ease-in-out" alt="plants-banner-first" loading="lazy" />
+              </div>
+                <div className='pb-[70px] w-[48%] max-md:w-[100%]'>
+                <img decoding="async" src="https://emart.wpthemedemos.com/plant-garden/wp-content/uploads/sites/10/2022/12/plants-banner-2nd.webp" className="hover:-ms-[15px] duration-300 ease-in-out" alt="plants-banner-2nd" loading="lazy" />
+                </div>
+              </div>
+        </section>
+      </Container>
+    </div>
+  )
+  }
+  
+  
+  export default Header_parts
+
+    
